@@ -26,6 +26,8 @@ SoundMatch simplifies the process of identifying artists by audio in various sit
 
 Users can access SoundMatch through a user-friendly web or mobile interface, where they can upload an audio snippet or record one in real-time. The AI system then processes the audio and provides the artist's name, making it a seamless and enjoyable music discovery experience.
 
+![concept image of the project](/SoundMatchGitConcept.jpg)
+
 ## Data Sources and AI Methods
 
 SoundMatch relies on a large dataset of audio samples from various artists. This dataset is collected and annotated for supervised learning. The AI model is designed using deep learning techniques, such as Convolutional Neural Networks (CNNs) or Recurrent Neural Networks (RNNs), trained on the annotated dataset. The AI system uses audio feature extraction methods like spectrograms or Mel-frequency cepstral coefficients (MFCCs) to process the audio data and make artist predictions. This project is aimed at creating an AI-driven audio recognition platform, similar to how Shazam works, but on a broader scale.
@@ -42,7 +44,7 @@ SoundMatch is a powerful tool for identifying artists by audio, but it has certa
 
 ## What's Next?
 
-To further develop SoundMatch and make it even more robust, we need the following:
+To further develop SoundMatch and make it even more robust, the following is needed:
 
 - **Expansion of Catalog:** Continuously update the database with new music releases and lesser-known artists.
 - **Feedback Loop:** Implement a feedback mechanism to improve the accuracy of artist identification based on user feedback.
@@ -51,5 +53,6 @@ To further develop SoundMatch and make it even more robust, we need the followin
 
 ## Acknowledgments
 
-- Image in Canva
+- https://www.shazam.com/
+- Image made in Canva
 - Inspiration from real-time audio recognition services and the desire to enhance music discovery.
