@@ -1,82 +1,55 @@
-# my-ai-project-idea
-Building AI course project
-
-<!-- This is the markdown template for the final project of the Building AI course, 
-created by Reaktor Innovations and University of Helsinki. 
-Copy the template, paste it to your GitHub README and edit! -->
-
-# Project Title
-
-Final project for the Building AI course
+# SoundMatch
+**Building AI Course Project**
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-
+SoundMatch is an AI-driven audio recognition platform aimed at discovering a match in identifying an artist by audio. This innovative solution addresses the common frustration of not being able to identify songs or an artist, offering a quick and accurate way to not be spending hours upon the internet to hopefully find what you where looking for in the first place.
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+Many of us have experienced the frustration of hearing a great song on the radio or at a live event and being unable to identify the singer or artist. This common scenario highlights the need for a solution that can quickly and accurately recognize songs and artists from audio snippets.
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+- **Frequency of the Problem:** The problem of not being able to identify songs or artists in real-time audio situations is a frequent one. It occurs daily for music enthusiasts, radio listeners, and event attendees who encounter unfamiliar tracks.
+
+- **Personal Motivation:** As a passionate music enthusiast deeply immersed in the music industry, the inability to identify and connect with music in the moment served as a personal motivator. The desire to provide a solution for this widespread challenge has driven the pursuit of this project.
+
+- **Importance and Interest:** The topic is important because it bridges the gap between what we hear and what we know, enhancing our music discovery experience. It also has the potential to be of interest to a broad audience, including music fans, radio stations, DJs, and music industry professionals, making it a compelling and significant endeavor.
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+SoundMatch simplifies the process of identifying artists by audio in various situations:
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
+- **Live Events:** Attendees at concerts or festivals can use their smartphones to record a snippet of a song and instantly discover a match of what like to be the artist.
+- **Radio Listeners:** Anyone listening to the radio can identify a song or artist without the need for a DJ announcement.
+- **Music Enthusiasts:** Users can use SoundMatch to identify songs in social settings, such as parties or gatherings.
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+Users can access SoundMatch through a user-friendly web or mobile interface, where they can upload an audio snippet or record one in real-time. The AI system then processes the audio and provides the artist's name, making it a seamless and enjoyable music discovery experience.
 
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+## Data Sources and AI Methods
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
-
-## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
-
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+SoundMatch relies on a large dataset of audio samples from various artists. This dataset is collected and annotated for supervised learning. The AI model is designed using deep learning techniques, such as Convolutional Neural Networks (CNNs) or Recurrent Neural Networks (RNNs), trained on the annotated dataset. The AI system uses audio feature extraction methods like spectrograms or Mel-frequency cepstral coefficients (MFCCs) to process the audio data and make artist predictions. This project is aimed at creating an AI-driven audio recognition platform, similar to how Shazam works, but on a broader scale.
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+SoundMatch is a powerful tool for identifying artists by audio, but it has certain limitations and ethical considerations:
 
-## What next?
+- **Limited Catalog:** The accuracy of artist identification depends on the availability of songs in the database. It may not work for very obscure or new artists.
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+- **Copyright and Privacy:** Use of copyrighted audio samples must adhere to legal regulations and privacy considerations, especially when user-generated audio is involved and limitations by GDPR.
 
+- **Bias in Data:** Ensuring a diverse and representative dataset is crucial to avoid bias in artist identification.
+
+## What's Next?
+
+To further develop SoundMatch and make it even more robust, we need the following:
+
+- **Expansion of Catalog:** Continuously update the database with new music releases and lesser-known artists.
+- **Feedback Loop:** Implement a feedback mechanism to improve the accuracy of artist identification based on user feedback.
+- **Partnerships:** Collaborate with music streaming services to enhance the platform's capabilities.
+- **Scalability:** Design the system to handle a growing user base effectively.
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+- Image in Canva
+- Inspiration from real-time audio recognition services and the desire to enhance music discovery.
